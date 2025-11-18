@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Nombres</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Comparador de Nombres</h1>
+        
+        <form method="POST" action="{{ url_for('ejercicio2') }}">
+            <div class="form-group">
+                <label for="nombre1">Nombre 1:</label>
+                <input type="text" id="nombre1" name="nombre1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nombre2">Nombre 2:</label>
+                <input type="text" id="nombre2" name="nombre2" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nombre3">Nombre 3:</label>
+                <input type="text" id="nombre3" name="nombre3" required>
+            </div>
+            
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+        
+        {% if resultado %}
+        <div class="resultado-error">
+            <p><strong>{{ resultado }}</strong></p>
+        </div>
+        {% endif %}
+        
+        {% if nombre_largo %}
+        <div class="resultado-nombres">
+            <p><strong>Nombre más largo:</strong> {{ nombre_largo }}</p>
+            <p><strong>Cantidad de caracteres:</strong> {{ cantidad_caracteres }}</p>
+        </div>
+        {% endif %}
+        
+        <a href="{{ url_for('index') }}" class="back-button">Volver al inicio</a>
+    </div>
+</body>
+</html>

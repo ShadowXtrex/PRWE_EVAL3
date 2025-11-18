@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 40px;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 60px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: left;
+    width: 100%;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+/* Estilos del formulario */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resultado {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.resultado p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.aprobado {
+    background-color: #28a745;
+}
+
+.reprobado {
+    background-color: #dc3545;
+}
+
+.estado {
+    font-size: 22px !important;
+    margin-top: 10px;
+}
+
+.resultado-nombres {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #007BFF;
+}
+
+.resultado-nombres p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.resultado-error {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #dc3545;
+}
+
+.resultado-error p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
